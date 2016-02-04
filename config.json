@@ -13,21 +13,24 @@
   },
   "requires": [],
   "canContain": false,
-  "view": "modules/grouplist/index.html",
-  "files": ["modules/grouplist/controller.js"],
-  "libs": [{
-    "bower": {
-      "PolymerElements/iron-flex-layout": "^1.0.0"
+  "view": "http://resources.kingofapp.com/modules/grouplist/index.html",
+  "files": ["http://resources.kingofapp.com/modules/grouplist/controller.js"],
+  "libs": [
+    {
+      "bower": {
+        "PolymerElements/iron-flex-layout": "^1.0.0"
+      },
+      "src": "http://resources.kingofapp.com/bower_components/iron-flex-layout/iron-flex-layout.html"
     },
-    "src": "bower_components/iron-flex-layout/iron-flex-layout.html"
-  }, {
-    "bower": {
-      "": ""
-    },
-    "src": "modules/grouplist/styles.html"
-  }],
+    {
+      "bower": {
+        "": ""
+      },
+      "src": "http://resources.kingofapp.com/modules/grouplist/styles.html"
+    }
+  ],
   "scope": {
-    "sections": ["#/menu/facebook", "#/menu/flickr"]
+    "sections": []
   },
   "config": [{
     "key": "sections",
