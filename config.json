@@ -16,22 +16,25 @@
   "canContain": false,
   "view": "http://resources.kingofapp.com/modules/grouplist/index.html",
   "files": ["http://resources.kingofapp.com/modules/grouplist/controller.js"],
-  "libs": [
-    {
-      "bower": {
-        "PolymerElements/iron-flex-layout": "^1.0.0"
-      },
-      "src": "http://resources.kingofapp.com/bower_components/iron-flex-layout/iron-flex-layout.html"
+  "libs": [{
+    "bower": {
+      "PolymerElements/iron-flex-layout": "^1.0.0"
     },
-    {
-      "bower": {
-        "": ""
-      },
-      "src": "http://resources.kingofapp.com/modules/grouplist/styles.html"
-    }
-  ],
+    "src": "http://resources.kingofapp.com/bower_components/iron-flex-layout/iron-flex-layout.html"
+  }, {
+    "bower": {
+      "grouplist": ""
+    },
+    "src": "http://resources.kingofapp.com/modules/grouplist/styles.html"
+  }],
   "scope": {
-    "sections": []
+    "sections": ["/menu-abcd/slider/home-abcd", "/menu-abcd/map-abcd", "/menu-abcd/slider", "/menu-abcd/slider/home-abcd", "/menu-abcd/map-abcd", "/menu-abcd/slider", "/menu-abcd", "/menu-abcd/slider", "/menu-abcd"],
+    "bgs": ["http://www.intrawallpaper.com/static/images/cube-pattern-28617-2560x1600.jpg", "http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/congruent_pentagon.png", "http://wallpapershome.com/images/pages/pic_h/3443.jpg", "http://newstitchaday.com/wp-content/uploads/2012/05/NSAD-Fancy-Slip-Stitch-Rib-ws-close.jpg"],
+    "columns": 3,
+    "separation": "5px",
+    "border": false,
+    "showText": true,
+    "showIcon": true
   },
   "config": [{
     "key": "sections",
@@ -45,6 +48,57 @@
           "options": []
         }
       }
+    }
+  }, {
+    "key": "bgs",
+    "templateOptions": {
+      "inputOptions": {
+        "type": "input"
+      },
+      "label": "Background urls",
+      "pattern": "(https?://)([/\\w.()-]*).*",
+      "required": true
+    },
+    "type": "multiInput"
+  }, {
+    "templateOptions": {
+      "label": "Columns",
+      "pattern": "^[0-9]+$",
+      "maxlength": 1,
+      "required": true,
+      "description": "Column number"
+    },
+    "type": "input",
+    "key": "columns"
+  }, {
+    "templateOptions": {
+      "label": "Margin",
+      "maxlength": 5,
+      "required": true,
+      "description": "Margin between items (px,%)"
+    },
+    "type": "input",
+    "key": "separation"
+  }, {
+    "type": "checkbox",
+    "key": "border",
+    "templateOptions": {
+      "description": "Item borders",
+      "label": "Border"
+    }
+  }, {
+    "type": "checkbox",
+    "key": "showText",
+    "templateOptions": {
+      "description": "Item text",
+      "label": "Show text"
+    }
+  }, {
+    "type": "checkbox",
+    "key": "showIcon",
+    "templateOptions": {
+      "description": "Item icon",
+      "label": "Show icon"
     }
   }],
   "descriptionShort": "Modulo de Group List"

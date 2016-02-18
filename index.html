@@ -1,14 +1,9 @@
 <div class="module grouplist" ng-controller="grouplistCtrl">
 
-  <div class="list short" role="listbox">
-    <a href="#{{item.url}}" ng-repeat="item in grouplist.modulescope.newsections">
-      <koa-item>
-        <div class='flex'>
-          {{item.name}}
-        </div>
-        <koa-icon-button icon="arrow-forward"></koa-icon-button>
-      </koa-item>
-    </a>
-  </div>
-  
+<koa-grid columns='{{grouplist.modulescope.columns}}' cell-space='{{grouplist.modulescope.separation}}'>
+  <a ng-class="grouplist.modulescope.border ? 'border' : 'X'" style="background:url('{{item.bg}}');" href="#{{item.url}}" ng-repeat="item in grouplist.modulescope.newsections">
+    <koa-icon ng-if="grouplist.modulescope.showIcon" class="singleicon" icon="{{item.icon}}"></koa-icon>
+    <p style='height:20%; text-align:center;' ng-if="grouplist.modulescope.showText">{{item.name}}</p>
+  </a>
+</koa-grid>
 </div>
