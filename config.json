@@ -15,17 +15,12 @@
   "requires": [],
   "canContain": false,
   "view": "http://resources.kingofapp.com/modules/grouplist/index.html",
-  "files": ["http://resources.kingofapp.com/modules/grouplist/controller.js"],
+  "files": ["http://resources.kingofapp.com/modules/grouplist/controller.js", "http://resources.kingofapp.com/modules/grouplist/styles.html"],
   "libs": [{
     "bower": {
       "PolymerElements/iron-flex-layout": "^1.0.0"
     },
     "src": "http://resources.kingofapp.com/bower_components/iron-flex-layout/iron-flex-layout.html"
-  }, {
-    "bower": {
-      "grouplist": ""
-    },
-    "src": "http://resources.kingofapp.com/modules/grouplist/styles.html"
   }],
   "scope": {
     "sections": ["/menu-abcd/slider/home-abcd", "/menu-abcd/map-abcd", "/menu-abcd/slider", "/menu-abcd/slider/home-abcd", "/menu-abcd/map-abcd", "/menu-abcd/slider", "/menu-abcd", "/menu-abcd/slider", "/menu-abcd"],
