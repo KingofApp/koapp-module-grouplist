@@ -120,13 +120,13 @@
     "dragDrop": true
   },
   "images": {
-    "list": "images/modules/list.png",
+    "list": "modules/grouplist/images/list.png",
     "screenshots": [
-      "images/modules/screenshot01.png",
-      "images/modules/screenshot02.png"
+      "modules/grouplist/images/screenshot01.png",
+      "modules/grouplist/images/screenshot02.png"
     ],
-    "popover": "images/modules/popover.png",
-    "banner": "images/modules/banner.png",
-    "logo": "images/modules/logo.png"
+    "popover": "modules/grouplist/images/popover.png",
+    "banner": "modules/grouplist/images/banner.png",
+    "logo": "modules/grouplist/images/logo.png"
   }
 }
