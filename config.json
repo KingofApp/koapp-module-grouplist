@@ -41,8 +41,8 @@
     "src": "bower_components/iron-flex-layout/iron-flex-layout.html"
   }],
   "scope": {
-    "sections": [],
-    "bgs": [],
+    "menuItems": [],
+    "backgroundImages": [],
     "columns": 1,
     "separation": "3px",
     "border": true,
@@ -50,10 +50,10 @@
     "showIcon": false
   },
   "config": [{
-    "key": "sections",
+    "key": "menuItems",
     "type": "multiInput",
     "templateOptions": {
-      "label": "Elements",
+      "label": "Menu Items",
       "inputOptions": {
         "type": "select",
         "templateOptions": {
@@ -63,12 +63,12 @@
       }
     }
   }, {
-    "key": "bgs",
+    "key": "backgroundImages",
     "templateOptions": {
       "inputOptions": {
         "type": "input"
       },
-      "label": "Background urls",
+      "label": "Background image URLs",
       "pattern": "(https?://)([/\\w.()-]*).*",
       "required": true
     },

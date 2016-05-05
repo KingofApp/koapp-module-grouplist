@@ -9,14 +9,14 @@ function loadFunction($scope, structureService, $location) {
 
   var list = [];
 
-  angular.forEach($scope.grouplist.modulescope.sections, function(value, key) {
+  angular.forEach($scope.grouplist.modulescope.menuItems, function(value, key) {
     if (structureService.get().modules[value.replace(/#/g, '')]) {
 
       var name = structureService.get().modules[value.replace(/#/g, '')].name;
       var icon = structureService.get().modules[value.replace(/#/g, '')].icon;
       var bg = "";
-      if($scope.grouplist.modulescope.bgs[key]){
-        bg = $scope.grouplist.modulescope.bgs[key];
+      if($scope.grouplist.modulescope.backgroundImages[key]){
+        bg = $scope.grouplist.modulescope.backgroundImages[key];
       }
 
       list.push({
