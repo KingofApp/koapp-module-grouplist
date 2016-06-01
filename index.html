@@ -1,7 +1,7 @@
 <div class="module grouplist" ng-controller="grouplistCtrl">
 
 <koa-grid columns='{{grouplist.modulescope.columns}}' cell-space='{{grouplist.modulescope.separation}}'>
-  <a ng-class="grouplist.modulescope.border ? 'border' : 'X'" style$="background-image: url('{{item.backgroundImage}}'); background-color: {{item.backgroundColor}};" href="#{{item.url}}" ng-repeat="item in grouplist.modulescope.newsections">
+  <a ng-class="grouplist.modulescope.border ? 'border' : 'X'" style="background-image: url('{{item.backgroundImage}}'); background-color: {{item.backgroundColor}};" href="#{{item.url}}" ng-repeat="item in grouplist.modulescope.newsections">
     <koa-icon ng-if="grouplist.modulescope.showIcon" class="singleicon" icon="{{item.icon}}"></koa-icon>
     <p style='height:20%; text-align:center;' ng-if="grouplist.modulescope.showText">{{item.name}}</p>
   </a>
