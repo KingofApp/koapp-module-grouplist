@@ -42,7 +42,6 @@
   }],
   "scope": {
     "menuItems": [],
-    "backgroundImages": [],
     "columns": 1,
     "separation": "3px",
     "border": true,
@@ -50,29 +49,34 @@
     "showIcon": false
   },
   "config": [{
+    "type": "repeatSection",
     "key": "menuItems",
-    "type": "multiInput",
     "templateOptions": {
-      "label": "Menu Items",
-      "inputOptions": {
+      "label": "Items",
+      "btnText": "Add another item to the menu",
+      "fields": [{
         "type": "select",
+        "key": "path",
         "templateOptions": {
-          "label": "Normal Select",
-          "options": []
+          "label": "Path",
+          "required": true
         }
-      }
+      }, {
+        "type": "input",
+        "key": "bgImage",
+        "templateOptions": {
+          "label": "Background Image URL",
+          "placeholder": "(Optional)"
+        }
+      }, {
+        "type": "input",
+        "key": "bgColor",
+        "templateOptions": {
+          "label": "Background Color",
+          "placeholder": "(Optional)"
+        }
+      }]
     }
-  }, {
-    "key": "backgroundImages",
-    "templateOptions": {
-      "inputOptions": {
-        "type": "input"
-      },
-      "label": "Background image URLs",
-      "pattern": "(https?://)([/\\w.()-]*).*",
-      "required": true
-    },
-    "type": "multiInput"
   }, {
     "templateOptions": {
       "label": "Columns",
