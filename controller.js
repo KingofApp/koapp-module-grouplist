@@ -9,20 +9,17 @@ function loadFunction($scope, structureService, $location) {
 
   var list = [];
 
-  angular.forEach($scope.grouplist.modulescope.sections, function(value, key) {
-    if (structureService.get().modules[value.replace(/#/g, '')]) {
+  angular.forEach($scope.grouplist.modulescope.menuItems, function(value, key) {
+    if (structureService.get().modules[value.path]) {
 
-      var name = structureService.get().modules[value.replace(/#/g, '')].name;
-      var icon = structureService.get().modules[value.replace(/#/g, '')].icon;
-      var bg = "";
-      if($scope.grouplist.modulescope.bgs[key]){
-        bg = $scope.grouplist.modulescope.bgs[key];
-      }
+      var name = structureService.get().modules[value.path].name;
+      var icon = structureService.get().modules[value.path].icon;
 
       list.push({
         name: name,
-        bg: bg,
-        url: value.replace(/#/g, ''),
+        backgroundImage: value.bgImage,
+        backgroundColor: value.bgColor,
+        url: value.path,
         icon: icon
       });
     }

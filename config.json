@@ -16,7 +16,7 @@
   "icon": "list",
   "type": "A",
   "canContain": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "King of App",
   "category": [
     "others"
@@ -41,8 +41,7 @@
     "src": "bower_components/iron-flex-layout/iron-flex-layout.html"
   }],
   "scope": {
-    "sections": [],
-    "bgs": [],
+    "menuItems": [],
     "columns": 1,
     "separation": "3px",
     "border": true,
@@ -50,29 +49,34 @@
     "showIcon": false
   },
   "config": [{
-    "key": "sections",
-    "type": "multiInput",
+    "type": "repeatSection",
+    "key": "menuItems",
     "templateOptions": {
-      "label": "Elements",
-      "inputOptions": {
+      "label": "Items",
+      "btnText": "Add another item to the menu",
+      "fields": [{
         "type": "select",
+        "key": "path",
         "templateOptions": {
-          "label": "Normal Select",
-          "options": []
+          "label": "Path",
+          "required": true
         }
-      }
+      }, {
+        "type": "input",
+        "key": "bgImage",
+        "templateOptions": {
+          "label": "Background Image URL",
+          "placeholder": "(Optional)"
+        }
+      }, {
+        "type": "input",
+        "key": "bgColor",
+        "templateOptions": {
+          "label": "Background Color",
+          "placeholder": "(Optional)"
+        }
+      }]
     }
-  }, {
-    "key": "bgs",
-    "templateOptions": {
-      "inputOptions": {
-        "type": "input"
-      },
-      "label": "Background urls",
-      "pattern": "(https?://)([/\\w.()-]*).*",
-      "required": true
-    },
-    "type": "multiInput"
   }, {
     "templateOptions": {
       "label": "Columns",
@@ -120,13 +124,13 @@
     "dragDrop": true
   },
   "images": {
-    "list": "modules/grouplist/images/list.png",
+    "list": "modules/grouplist/images/grouplist_list.png",
     "screenshots": [
-      "modules/grouplist/images/screenshot01.png",
-      "modules/grouplist/images/screenshot02.png"
+      "modules/grouplist/images/grouplist_screenshots01.png",
+      "modules/grouplist/images/grouplist_screenshots02.png"
     ],
-    "popover": "modules/grouplist/images/popover.png",
-    "banner": "modules/grouplist/images/banner.png",
-    "logo": "modules/grouplist/images/logo.png"
+    "popover": "modules/grouplist/images/grouplist_popover.png",
+    "banner": "modules/grouplist/images/grouplist_popover.png",
+    "logo": "modules/grouplist/images/grouplist_logo.png"
   }
 }
