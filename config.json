@@ -124,13 +124,13 @@
     "dragDrop": true
   },
   "images": {
-    "list": "modules/grouplist/images/list.png",
+    "list": "modules/grouplist/images/grouplist_list.png",
     "screenshots": [
-      "modules/grouplist/images/screenshot01.png",
-      "modules/grouplist/images/screenshot02.png"
+      "modules/grouplist/images/grouplist_screenshots01.png",
+      "modules/grouplist/images/grouplist_screenshots02.png"
     ],
-    "popover": "modules/grouplist/images/popover.png",
-    "banner": "modules/grouplist/images/banner.png",
-    "logo": "modules/grouplist/images/logo.png"
+    "popover": "modules/grouplist/images/grouplist_popover.png",
+    "banner": "modules/grouplist/images/grouplist_popover.png",
+    "logo": "modules/grouplist/images/grouplist_logo.png"
   }
 }
