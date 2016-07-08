@@ -46,7 +46,8 @@
     "separation": "3px",
     "border": true,
     "showText": true,
-    "showIcon": false
+    "showIcon": false,
+    "visualization": "grid"
   },
   "config": [{
     "type": "repeatSection",
@@ -116,6 +117,18 @@
     "templateOptions": {
       "description": "Item icon",
       "label": "Show icon"
+    }
+  },
+  {
+    "type": "select",
+    "key": "visualization",
+    "templateOptions": {
+      "description": "Select type of visualization",
+      "label": "visualization",
+      "options": [
+        {"name": "Grid", "value": "grid" },
+        {"name": "List", "value": "list" }
+      ]
     }
   }],
   "showOn": {

@@ -7,6 +7,8 @@ function loadFunction($scope, structureService, $location) {
   //Register upper level modules
   structureService.registerModule($location, $scope, "grouplist");
 
+  $scope.visualization = $scope.grouplist.modulescope.visualization || 'grid';
+
   var list = [];
 
   angular.forEach($scope.grouplist.modulescope.menuItems, function(value, key) {
