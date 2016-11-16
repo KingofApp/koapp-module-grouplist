@@ -7,11 +7,15 @@
   </a>
 </koa-grid>
 
-<koa-item class="listContainer" ng-if="visualization === 'list'" ng-class="grouplist.modulescope.border ? 'border' : 'X'" style="background-image: url('{{item.backgroundImage}}'); background-color: {{item.backgroundColor}};" href="#{{item.url}}" ng-repeat="item in grouplist.modulescope.newsections">
-  <koa-icon ng-if="grouplist.modulescope.showIcon" icon="{{item.icon}}"></koa-icon>
-  <koa-item-body>
+<koa-item class="listContainer" ng-if="visualization === 'list'" ng-class="grouplist.modulescope.border ? 'border' : 'X'" style="background-image: url('{{item.backgroundImage}}'); background-color: {{item.backgroundColor}};" ng-repeat="item in grouplist.modulescope.newsections">
+<a href="#{{item.url}}">
+  <koa-icon class="itemIcon" ng-if="grouplist.modulescope.showIcon" icon="{{item.icon}}"></koa-icon>
+  <koa-item-body ng-if="grouplist.modulescope.showText">
     <div>{{item.name}}</div>
   </koa-item-body>
+  <koa-icon class='rightIcon' icon="arrow-forward">
+  <koa-icon>
+</a>
 </koa-item>
 
 </div>
