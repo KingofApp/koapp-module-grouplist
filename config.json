@@ -2,21 +2,21 @@
   "name": "Group list",
   "identifier": "grouplist",
   "description": {
-    "es-ES": "Modulo de Group List",
-    "en-US": "Modulo de Group List"
+    "es-ES": "Agrupa tu contenido para facilitar la búsqueda de información a través de este módulo. ",
+    "en-US": "Group your content to facilitate the search for information by activating this module."
   },
   "documentation": {
     "es-ES": "modules/grouplist/documentation/es_ES.md",
     "en-US": "modules/grouplist/documentation/en_US.md"
   },
   "descriptionShort": {
-    "es-ES": "Modulo de Group List",
-    "en-US": "Modulo de Group List"
+    "es-ES": "Agrupa tu contenido para facilitar la búsqueda de información.",
+    "en-US": "Group your content to facilitate the search for information."
   },
   "icon": "list",
   "type": "A",
   "canContain": false,
-  "version": "1.0.5",
+  "version": "1.0.6",
   "author": "King of App",
   "category": [
     "others"
