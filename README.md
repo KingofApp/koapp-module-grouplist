@@ -13,3 +13,9 @@ Los módulos que se incluyan en el "_Group List_" deben estar previamente config
 ![duplicidad menú](http://kingofapp.es/wp-content/uploads/2015/12/duplicidad-menú1-300x159.png)Para evitar esta duplicidad que se observa en la segunda imagen de este sencillo tutorial, en King of App hemos habilitado una opción en la configuración de todos los módulos: un checkbox para **habilitar que se muestre o no en el menú**.
 
 Una rápida configuración que te puede dar mucho juego a la hora de organizar los contenidos de cualquier App. Un módulo que, como todos, se puede **duplicar** y utilizar tantas veces como quieras en tu aplicación.
+
+### Details:
+
+- Author: King of app
+- Version: 1.0.7
+- Homepage:
