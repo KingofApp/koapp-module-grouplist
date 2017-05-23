@@ -1,6 +1,6 @@
 {
     "name": "koapp-module-grouplist",
-    "version": "1.0.9",
+    "version": "1.0.10",
     "description": "Modulo de Group List",
     "directories": {
         "test": "test"
@@ -31,7 +31,8 @@
         "gulp-watch": "^4.3.10",
         "jsesc": "^2.2.0",
         "protractor": "^2.0.0",
-        "gutil-color-log": "^1.0.2"
+        "gutil-color-log": "^1.0.2",
+        "pre-commit": "^1.1.2"
     },
     "author": "Koapp <koappnpmpublisher@gmail.com> (http://www.kingofapp.com)",
     "license": "MIT",
