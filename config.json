@@ -1,149 +1,167 @@
 {
-  "name": "Group list",
-  "identifier": "grouplist",
-  "description": {
-    "es-ES": "Agrupa tu contenido para facilitar la búsqueda de información a través de este módulo. ",
-    "en-US": "Group your content to facilitate the search for information by activating this module."
-  },
-  "documentation": {
-    "es-ES": "modules/grouplist/documentation/es_ES.md",
-    "en-US": "modules/grouplist/documentation/en_US.md"
-  },
-  "descriptionShort": {
-    "es-ES": "Agrupa tu contenido para facilitar la búsqueda de información.",
-    "en-US": "Group your content to facilitate the search for information."
-  },
-  "icon": "list",
-  "type": "A",
-  "canContain": false,
-  "version": "1.0.8",
-  "author": "King of App",
-  "category": [
-    "others"
-  ],
-  "price": 0,
-  "subscription": false,
-  "canContain": false,
-  "platforms": [
-    "android",
-    "ios",
-    "windows"
-  ],
-  "view": "modules/grouplist/index.html",
-  "files": [
-    "modules/grouplist/controller.js",
-    "modules/grouplist/styles.html"
-  ],
-  "libs": [{
-    "bower": {
-      "PolymerElements/iron-flex-layout": "^1.0.0"
+    "name": "Group list",
+    "identifier": "grouplist",
+    "description": {
+        "es-ES": "Agrupa tu contenido para facilitar la búsqueda de información a través de este módulo. ",
+        "en-US": "Group your content to facilitate the search for information by activating this module."
     },
-    "src": "bower_components/iron-flex-layout/iron-flex-layout.html"
-  }],
-  "scope": {
-    "menuItems": [],
-    "columns": 1,
-    "separation": "3px",
-    "border": true,
-    "showText": true,
-    "showIcon": false,
-    "visualization": "grid"
-  },
-  "config": [{
-    "type": "repeatSection",
-    "key": "menuItems",
-    "templateOptions": {
-      "label": "Items",
-      "btnText": "Add another item to the menu",
-      "fields": [{
-        "type": "select",
-        "key": "path",
-        "templateOptions": {
-          "label": "Path",
-          "required": true
-        }
-      }, {
-        "type": "input",
-        "key": "bgImage",
-        "templateOptions": {
-          "label": "Background Image URL",
-          "placeholder": "(Optional)"
-        }
-      }, {
-        "type": "input",
-        "key": "bgColor",
-        "templateOptions": {
-          "label": "Background Color",
-          "placeholder": "(Optional)"
-        }
-      }]
-    }
-  }, {
-    "templateOptions": {
-      "label": "Columns",
-      "pattern": "^[0-9]+$",
-      "maxlength": 1,
-      "required": true,
-      "description": "Column number"
+    "documentation": {
+        "es-ES": "modules/grouplist/documentation/es_ES.md",
+        "en-US": "modules/grouplist/documentation/en_US.md"
     },
-    "type": "input",
-    "key": "columns"
-  }, {
-    "templateOptions": {
-      "label": "Margin",
-      "maxlength": 5,
-      "required": true,
-      "description": "Margin between items (px,%)"
+    "descriptionShort": {
+        "es-ES": "Agrupa tu contenido para facilitar la búsqueda de información.",
+        "en-US": "Group your content to facilitate the search for information."
     },
-    "type": "input",
-    "key": "separation"
-  }, {
-    "type": "checkbox",
-    "key": "border",
-    "templateOptions": {
-      "description": "Item borders",
-      "label": "Border"
-    }
-  }, {
-    "type": "checkbox",
-    "key": "showText",
-    "templateOptions": {
-      "description": "Item text",
-      "label": "Show text"
-    }
-  }, {
-    "type": "checkbox",
-    "key": "showIcon",
-    "templateOptions": {
-      "description": "Item icon",
-      "label": "Show icon"
-    }
-  },
-  {
-    "type": "select",
-    "key": "visualization",
-    "templateOptions": {
-      "description": "Select type of visualization",
-      "label": "visualization",
-      "options": [
-        {"name": "Grid", "value": "grid" },
-        {"name": "List", "value": "list" }
-      ]
-    }
-  }],
-  "showOn": {
-    "menu": true,
-    "market": true,
-    "dragDrop": true
-  },
-  "images": {
-    "list": "modules/grouplist/images/grouplist_list.png",
-    "screenshots": [
-      "modules/grouplist/images/grouplist_screenshots01.png",
-      "modules/grouplist/images/grouplist_screenshots02.png"
+    "icon": "list",
+    "type": "A",
+    "canContain": false,
+    "version": "1.0.9",
+    "author": "King of App",
+    "category": [
+        "others"
     ],
-    "popover": "modules/grouplist/images/grouplist_popover.png",
-    "banner": "modules/grouplist/images/grouplist_popover.png",
-    "logo": "modules/grouplist/images/grouplist_logo.png"
-  }
+    "price": 0,
+    "subscription": false,
+    "platforms": [
+        "android",
+        "ios",
+        "windows"
+    ],
+    "view": "modules/grouplist/index.html",
+    "files": [
+        "modules/grouplist/controller.js",
+        "modules/grouplist/styles.html"
+    ],
+    "libs": [
+        {
+            "bower": {
+                "PolymerElements/iron-flex-layout": "^1.0.0"
+            },
+            "src": "bower_components/iron-flex-layout/iron-flex-layout.html"
+        }
+    ],
+    "scope": {
+        "menuItems": [],
+        "columns": 1,
+        "separation": "3px",
+        "border": true,
+        "showText": true,
+        "showIcon": false,
+        "visualization": "grid"
+    },
+    "config": [
+        {
+            "type": "repeatSection",
+            "key": "menuItems",
+            "templateOptions": {
+                "label": "Items",
+                "btnText": "Add another item to the menu",
+                "fields": [
+                    {
+                        "type": "select",
+                        "key": "path",
+                        "templateOptions": {
+                            "label": "Path",
+                            "required": true
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "key": "bgImage",
+                        "templateOptions": {
+                            "label": "Background Image URL",
+                            "placeholder": "(Optional)"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "key": "bgColor",
+                        "templateOptions": {
+                            "label": "Background Color",
+                            "placeholder": "(Optional)"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "templateOptions": {
+                "label": "Columns",
+                "pattern": "^[0-9]+$",
+                "maxlength": 1,
+                "required": true,
+                "description": "Column number"
+            },
+            "type": "input",
+            "key": "columns"
+        },
+        {
+            "templateOptions": {
+                "label": "Margin",
+                "maxlength": 5,
+                "required": true,
+                "description": "Margin between items (px,%)"
+            },
+            "type": "input",
+            "key": "separation"
+        },
+        {
+            "type": "checkbox",
+            "key": "border",
+            "templateOptions": {
+                "description": "Item borders",
+                "label": "Border"
+            }
+        },
+        {
+            "type": "checkbox",
+            "key": "showText",
+            "templateOptions": {
+                "description": "Item text",
+                "label": "Show text"
+            }
+        },
+        {
+            "type": "checkbox",
+            "key": "showIcon",
+            "templateOptions": {
+                "description": "Item icon",
+                "label": "Show icon"
+            }
+        },
+        {
+            "type": "select",
+            "key": "visualization",
+            "templateOptions": {
+                "description": "Select type of visualization",
+                "label": "visualization",
+                "options": [
+                    {
+                        "name": "Grid",
+                        "value": "grid"
+                    },
+                    {
+                        "name": "List",
+                        "value": "list"
+                    }
+                ]
+            }
+        }
+    ],
+    "showOn": {
+        "menu": true,
+        "market": true,
+        "dragDrop": true
+    },
+    "images": {
+        "list": "modules/grouplist/images/grouplist_list.png",
+        "screenshots": [
+            "modules/grouplist/images/grouplist_screenshots01.png",
+            "modules/grouplist/images/grouplist_screenshots02.png"
+        ],
+        "popover": "modules/grouplist/images/grouplist_popover.png",
+        "banner": "modules/grouplist/images/grouplist_popover.png",
+        "logo": "modules/grouplist/images/grouplist_logo.png"
+    }
 }
