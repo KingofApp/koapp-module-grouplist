@@ -47,7 +47,7 @@
         "border": true,
         "showText": true,
         "showIcon": false,
-        "showDescription": false,
+        "showDescription": false
     },
     "config": [
         {
