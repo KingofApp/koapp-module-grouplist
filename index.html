@@ -1,6 +1,6 @@
 <div class="module grouplist" ng-controller="grouplistCtrl">
   <koa-item class="listContainer" ng-class="grouplist.modulescope.border ? 'border' : 'X'" style="background-image: url('{{item.backgroundImage}}'); background-color: {{item.backgroundColor}}; margin: {{grouplist.modulescope.separation}};" ng-repeat="item in list">
-    <a href="#{{item.url}}" ng-class="item.description ? 'description' : 'X'">
+    <a href="#{{item.url}}" ng-class="item.description && grouplist.modulescope.showDescription? 'description' : 'X'">
       <koa-icon class="itemIcon" ng-if="grouplist.modulescope.showIcon" icon="{{item.icon}}"></koa-icon>
       <koa-item-body ng-if="grouplist.modulescope.showText">
         <div>{{item.name}}</div>
