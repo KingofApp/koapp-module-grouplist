@@ -16,7 +16,7 @@
     "icon": "list",
     "type": "A",
     "canContain": false,
-    "version": "1.0.10",
+    "version": "1.0.9",
     "author": "King of App",
     "category": [
         "others"
@@ -43,12 +43,11 @@
     ],
     "scope": {
         "menuItems": [],
-        "columns": 1,
-        "separation": "3px",
+        "separation": "1px",
         "border": true,
         "showText": true,
         "showIcon": false,
-        "visualization": "grid"
+        "showDescription": false
     },
     "config": [
         {
@@ -68,6 +67,14 @@
                     },
                     {
                         "type": "input",
+                        "key": "description",
+                        "templateOptions": {
+                            "label": "Description",
+                            "placeholder": "(Optional)"
+                        }
+                    },
+                    {
+                        "type": "input",
                         "key": "bgImage",
                         "templateOptions": {
                             "label": "Background Image URL",
@@ -82,19 +89,9 @@
                             "placeholder": "(Optional)"
                         }
                     }
+
                 ]
             }
-        },
-        {
-            "templateOptions": {
-                "label": "Columns",
-                "pattern": "^[0-9]+$",
-                "maxlength": 1,
-                "required": true,
-                "description": "Column number"
-            },
-            "type": "input",
-            "key": "columns"
         },
         {
             "templateOptions": {
@@ -124,28 +121,18 @@
         },
         {
             "type": "checkbox",
+            "key": "showDescription",
+            "templateOptions": {
+                "description": "Item description",
+                "label": "Show Description"
+            }
+        },
+        {
+            "type": "checkbox",
             "key": "showIcon",
             "templateOptions": {
                 "description": "Item icon",
                 "label": "Show icon"
-            }
-        },
-        {
-            "type": "select",
-            "key": "visualization",
-            "templateOptions": {
-                "description": "Select type of visualization",
-                "label": "visualization",
-                "options": [
-                    {
-                        "name": "Grid",
-                        "value": "grid"
-                    },
-                    {
-                        "name": "List",
-                        "value": "list"
-                    }
-                ]
             }
         }
     ],

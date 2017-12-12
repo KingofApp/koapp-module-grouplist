@@ -1,31 +1,34 @@
-angular
-  .controller('grouplistCtrl', loadFunction);
+(function() {
+  angular
+    .controller('grouplistCtrl', loadFunction);
 
-loadFunction.$inject = ['$scope', 'structureService', '$location'];
+  loadFunction.$inject = ['$scope', 'structureService', '$location'];
 
-function loadFunction($scope, structureService, $location) {
-  //Register upper level modules
-  structureService.registerModule($location, $scope, "grouplist");
+  function loadFunction($scope, structureService, $location) {
+    //Register upper level modules
+    structureService.registerModule($location, $scope, "grouplist");
 
-  $scope.visualization = $scope.grouplist.modulescope.visualization || 'grid';
+    $scope.separation = $scope.grouplist.modulescope.separation || '0px';
 
-  var list = [];
 
-  angular.forEach($scope.grouplist.modulescope.menuItems, function(value, key) {
-    if (structureService.get().modules[value.path]) {
+    var list = [];
 
-      var name = structureService.get().modules[value.path].name;
-      var icon = structureService.get().modules[value.path].icon;
+    angular.forEach($scope.grouplist.modulescope.menuItems, function(value, key) {
+      if (structureService.get().modules[value.path]) {
 
-      list.push({
-        name: name,
-        backgroundImage: value.bgImage,
-        backgroundColor: value.bgColor,
-        url: value.path,
-        icon: icon
-      });
-    }
+        var name = structureService.get().modules[value.path].name;
+        var icon = structureService.get().modules[value.path].icon;
 
-  });
-  $scope.grouplist.modulescope.newsections = list;
-}
+        list.push({
+          name: name,
+          description: value.description,
+          backgroundImage: value.bgImage,
+          backgroundColor: value.bgColor,
+          url: value.path,
+          icon: icon
+        });
+      }
+    });
+    $scope.list = list;
+  }
+}());

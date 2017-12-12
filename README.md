@@ -17,5 +17,5 @@ Una rápida configuración que te puede dar mucho juego a la hora de organizar l
 ### Details:
 
 - Author: King of app
-- Version: 1.0.8
+- Version: 1.0.9
 - Homepage:

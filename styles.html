@@ -1,53 +1,24 @@
 <style is="custom-style">
-  .grouplist .list {
-    @apply(--layout-vertical);
-    padding-top: 12px;
-    margin: 12px;
-    @apply(--shadow-elevation-2dp);
-  }
+.grouplist a.border {
+  border: 1px var(--divider-color) solid;
+  margin: 0px -1px;
+}
+.grouplist .listContainer > a {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  width: 100%
+}
 
-  .grouplist .short {
-    padding-top: 12px;
-  }
+.grouplist .listContainer > a > * {
+  padding-left: 1em;
+}
 
-  .grouplist .flex {
-    @apply(--layout-flex);
-  }
+.grouplist .description > .itemIcon {
+  padding-top: 10px;
+}
+.grouplist .description > .rightIcon {
+  padding-top: 10px;
+}
 
-  .grouplist a {
-    outline: none;
-    text-decoration: none;
-    color: inherit;
-    display: block;
-    width:100%;
-    position:relative;
-  }
-  .grouplist koa-icon.singleicon{
-    --iron-icon-width:100%;
-    --iron-icon-height:100%;
-    width:100%;
-  }
-  .grouplist koa-icon.texticon{
-    color:var(--secondary-text-color);
-    padding-right:10px;
-  }
-  .grouplist a.border{
-    border:1px var(--divider-color) solid;
-    margin: 0px -1px;
-  }
-  .grouplist koa-icon.itemIcon {
-    float:left;
-    margin-right:10px;
-  }
-  .grouplist koa-icon.rightIcon {
-    position:absolute;
-    right:0px;
-    top:0px;
-  }
-  .grouplist android-grid a{
-    box-sizing:border-box;
-  }
-  .grouplist .listContainer {
-    border-bottom: 1px solid #CCC;
-  }
 </style>
