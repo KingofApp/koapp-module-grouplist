@@ -16,10 +16,10 @@
     "icon": "list",
     "type": "A",
     "canContain": false,
-    "version": "1.0.9",
+    "version": "1.0.10",
     "author": "King of App",
     "category": [
-        "others"
+        "others", "menu"
     ],
     "price": 0,
     "subscription": false,
