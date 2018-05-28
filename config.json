@@ -19,7 +19,7 @@
     "version": "1.0.9",
     "author": "King of App",
     "category": [
-        "others"
+        "others", "menu"
     ],
     "price": 0,
     "subscription": false,
