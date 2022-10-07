@@ -1,4 +1,5 @@
 <div class="module grouplist" ng-controller="grouplistCtrl">
+  <div class="items" ng-show="showMenu">
   <koa-item class="listContainer" ng-class="grouplist.modulescope.border ? 'border' : 'X'" style="background-image: url('{{item.backgroundImage}}'); background-color: {{item.backgroundColor}}; margin: {{grouplist.modulescope.separation}};" ng-repeat="item in list">
     <a href="#{{item.url}}" ng-class="item.description && grouplist.modulescope.showDescription? 'description' : 'X'">
       <koa-icon class="itemIcon" ng-if="grouplist.modulescope.showIcon" icon="{{item.icon}}"></koa-icon>
@@ -10,4 +11,22 @@
       </koa-icon>
     </a>
   </koa-item>
+  </div>
+  
+  <div id="main" ng-show="!showMenu">
+    <!-- moduleIdentifier + Template -->
+    <div ng-include="grouplistTemplate"></div>
+  </div>
+  
+
+  <div class="bump-menu-open" id="boton" ng-class="menusasd">
+        <div class="bump-menu-open__up "></div>
+        <div class="bump-menu-open__container" ng-click="showMenu = !showMenu? true : false;">
+            <div class="icon">
+               <koa-icon icon="{{grouplist.icon}}" id="menuIcon" class="my-float"></koa-icon>
+            </div>
+        </div>
+    	<div class="bump-menu-open__down "></div>		
+    </div>
+  
 </div>
