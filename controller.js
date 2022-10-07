@@ -9,7 +9,7 @@
     structureService.registerModule($location, $scope, "grouplist");
 
     $scope.separation = $scope.grouplist.modulescope.separation || '0px';
-
+    $scope.showMenu = false;
 
     var list = [];
 
