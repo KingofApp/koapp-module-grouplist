@@ -15,8 +15,8 @@
     },
     "icon": "list",
     "type": "A",
-    "canContain": false,
-    "version": "1.0.10",
+    "canContain": true,
+    "version": "1.1.0",
     "author": "King of App",
     "category": [
         "others", "menu"

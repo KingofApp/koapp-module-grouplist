@@ -10,7 +10,8 @@
 
     $scope.separation = $scope.grouplist.modulescope.separation || '0px';
 
-
+    $scope.showMenu = $location.path().match(/.*\/grouplist-[a-zA-Z0-9]*$/) ? true: false;
+    
     var list = [];
 
     angular.forEach($scope.grouplist.modulescope.menuItems, function(value, key) {

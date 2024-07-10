@@ -1,13 +1,21 @@
 <div class="module grouplist" ng-controller="grouplistCtrl">
-  <koa-item class="listContainer" ng-class="grouplist.modulescope.border ? 'border' : 'X'" style="background-image: url('{{item.backgroundImage}}'); background-color: {{item.backgroundColor}}; margin: {{grouplist.modulescope.separation}};" ng-repeat="item in list">
-    <a href="#{{item.url}}" ng-class="item.description && grouplist.modulescope.showDescription? 'description' : 'X'">
-      <koa-icon class="itemIcon" ng-if="grouplist.modulescope.showIcon" icon="{{item.icon}}"></koa-icon>
-      <koa-item-body ng-if="grouplist.modulescope.showText">
-        <div>{{item.name}}</div>
-        <div ng-if="item.description && grouplist.modulescope.showDescription">{{item.description}}</div>
-      </koa-item-body>
-      <koa-icon class='rightIcon' icon="arrow-forward">
-      </koa-icon>
-    </a>
-  </koa-item>
+
+  <div class="menu" ng-show="showMenu">
+    <koa-item class="listContainer" ng-class="grouplist.modulescope.border ? 'border' : 'X'" style="background-image: url('{{item.backgroundImage}}'); background-color: {{item.backgroundColor}}; margin: {{grouplist.modulescope.separation}};" ng-repeat="item in list">
+      <a href="#{{item.url}}" ng-class="item.description && grouplist.modulescope.showDescription? 'description' : 'X'">
+        <koa-icon class="itemIcon" ng-if="grouplist.modulescope.showIcon" icon="{{item.icon}}"></koa-icon>
+        <koa-item-body ng-if="grouplist.modulescope.showText">
+          <div>{{item.name}}</div>
+          <div ng-if="item.description && grouplist.modulescope.showDescription">{{item.description}}</div>
+        </koa-item-body>
+        <koa-icon class='rightIcon' icon="arrow-forward">
+        </koa-icon>
+      </a>
+    </koa-item>
+  </div>
+
+  <div class="content">
+    <!-- moduleIdentifier + Template - Needs embracing div -->
+    <div ng-include="grouplistTemplate" class="template"></div>
+  </div>
 </div>
